@@ -4,6 +4,7 @@ import HowItWorks from './components/HowItWorks'
 import Providers from './components/Providers'
 import Estimator from './components/Estimator'
 import JobRunner from './components/JobRunner'
+import ProviderRegister from './components/ProviderRegister'
 import CustomCursor from './components/CustomCursor'
 import WalletBar from './components/WalletBar'
 import { type Provider, type EstimateResult } from './lib/api'
@@ -28,6 +29,7 @@ export default function App() {
         }}
       />
       <JobRunner provider={selectedProvider} estimate={estimate} taskType={taskType} />
+      <ProviderRegister />
       <footer className="bg-black border-t border-primary/5 py-10 px-4 md:px-8 text-center">
         <p className="text-[10px] text-primary/20 uppercase tracking-widest">
           RailGrid · x402 Build Challenge · India DevRetreat · Algorand · June 2026

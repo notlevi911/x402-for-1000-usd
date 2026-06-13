@@ -118,7 +118,6 @@ export async function x402Fetch(
     accepted: requirements,
   }
 
-  console.log('[x402] paymentPayload:', JSON.stringify(paymentPayload, null, 2))
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const paymentHeader = encodePaymentSignatureHeader(paymentPayload as any)
 
